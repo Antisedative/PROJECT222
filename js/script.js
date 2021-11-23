@@ -17,11 +17,9 @@ $(document).ready(function () {
         $(this).removeClass('scaled');
         $('.item__business').removeClass('business-scale');
     });
-});
 
 // ОТЗЫВЫ
 
-$(document).ready(function () {
     $('.slider').on(`init reInit`, function (event, slick) {
         $('.slick-slide-num-current').text('0' + 1 + ' '); // ' / ' + '0' + slick.slideCount
     })
