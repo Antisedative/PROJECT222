@@ -1663,7 +1663,7 @@ footer .footer__text {
 
   .header__video {
     width: 100%;
-    max-height: 1100px;
+    min-height: 800px;
   }
 
   .header__content {
@@ -1691,7 +1691,7 @@ footer .footer__text {
 
   .header__content-text {
     margin: 20px auto 40px;
-    width: 375px;
+    width: 100%;
     line-height: 20px;
     font-size: 14px;
     opacity: 0.7;
