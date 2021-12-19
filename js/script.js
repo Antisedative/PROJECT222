@@ -1,6 +1,7 @@
-// ТАРИФЫ
-
 $(document).ready(function () {
+
+    // ТАРИФЫ
+
     $('.plans__card-starting').mouseover(function () {
         $(this).addClass('scaled');
         $('.plans__card-business').addClass('business-scale');
@@ -36,9 +37,8 @@ $(document).ready(function () {
         adaptiveHeight: true,
         easing: 'ease',
         appendArrows: '.slick__arrows',
-        prevArrow: '<button data-role="none" class="slick-prev slick-arrow" aria-hidden="true"></button>',
-        nextArrow: '<button type="button" data-role="none" class="slick-next slick-arrow" aria-label=""></button>',
-
+        prevArrow: '<span class="slick-prev"><</span>',
+        nextArrow: '<span class="slick-next">></span>',
     });
 
     // ПАРТНЕРЫ
@@ -49,10 +49,19 @@ $(document).ready(function () {
         slidesToShow: 6,
         slidesToScroll: 1,
         easing: 'ease',
-        centerMode: true,
         autoplay: true,
+        pauseOnFocus: true,
         autoplaySpeed: 2500,
         speed: 1500,
+        responsive: [{
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                centerMode: false,
+                variableWidth: true,
+            }
+        }],
     });
 
     $('.partners__slider-2').slick({
@@ -62,7 +71,18 @@ $(document).ready(function () {
         slidesToScroll: 2,
         easing: 'ease',
         autoplay: true,
+        pauseOnFocus: true,
         autoplaySpeed: 2700,
         speed: 2000,
+        responsive: [{
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                centerMode: true,
+                focusOnSelect: true,
+                variableWidth: true
+            }
+        }],
     });
 });

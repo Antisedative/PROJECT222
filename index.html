@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta team__descr-name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="img/header/DC-logo.svg">
     <title>Drupal Coder - разработка сайтов на drupal</title>
 
@@ -18,28 +18,42 @@
 
 <body>
     <header class="header">
-        <div class="container">
-            <div class="header__menu">
-                <a class="header__logo" href="#">
-                    <img src="img/drupal-coder.svg" alt="drupal-icon">
-                </a>
-                <a class="header__menu-link header__menu-support" href="#">Поддержка сайтов</a>
-                <a class="header__menu-link header__menu-tariffs" href="#">Тарифы</a>
-                <a class="header__menu-link header__menu-portfolio" href="#">Наши работы</a>
-                <a class="header__menu-link header__menu-rewiew " href="#">Отзывы</a>
-                <a class="header__menu-link header__menu-contacts" href="#">Контакты</a>
-                <div class="header__contacts">
-                    <a class="header__phone" href="tel:8800222-26-73">8 800 222-26-73</a>
-                    <a class="header__lang" href="#">RU</a>
-                </div>
+        <div class="header__container _container">
+            <div class="header__burger">
+                <span></span>
+            </div>
+            <div class="header__menu-wrapper">
+                <ul class="header__menu _container">
+                    <div class="header__logo _container">
+                        <a href="#">
+                            <img src="img/drupal-coder.svg" alt="drupal-icon">
+                        </a>
+                    </div>
+                    <li class="header__menu-link" id="sup"><a href="#support">Поддержка сайтов</a></li>
+                    <li class="header__menu-link" id="tar"><a href="#plans">Тарифы</a></li>
+                    <li class="header__menu-link" id="port"><a href="#cases">Наши работы</a></li>
+                    <li class="header__menu-link" id="rew"><a href="#reviews">Отзывы</a></li>
+                    <li class="header__menu-link" id="cont"><a href="#webform">Контакты</a></li>
+                    <ul class="header__contacts">
+                        <li class="header__phone"><a href="tel:8800222-26-73">8 800 222-26-73</a></li>
+                        <li class="header__lang">
+                            <a href="#">RU</a>
+                            <ul>
+                                <li><a href="#">EN</a></li>
+                                <li><a href="#">CN</a></li>
+                            </ul>
+                        </li>
+                        <img class="header__lang-arrow" src="img/header/arrow-lang.svg" alt="">
+                    </ul>
+                </ul>
             </div>
 
             <div class="header__content">
-                <div class="header__descr">
+                <div class="header__descr _container">
                     <h1 class="header__content-title">Поддержка сайтов на Drupal</h1>
                     <p class="header__content-text">Сопровождение и поддержка сайтов на CMS Drupal любых версий и
                         запущенности</p>
-                    <a href="#" class="header__btn">ТАРИФЫ</a>
+                    <a href="#plans" class="header__btn">ТАРИФЫ</a>
 
                 </div>
 
@@ -102,7 +116,7 @@
             <source src="img/header-video/video.mp4" type="video/mp4">
         </video>
     </header>
-    <div class="services">
+    <div class="services _container">
         <div class="services__title">
             <span>
                 13 лет совершенствуем компетенции в Drupal поддержке!
@@ -162,7 +176,7 @@
             </div>
         </div>
     </div>
-    <div class="support">
+    <div class="support _container" id="support">
         <div class="support__title">
             <span>
                 Поддержка от Drupal-coder
@@ -251,7 +265,7 @@
             </div>
         </div>
     </div>
-    <div class="support__wrapper">
+    <div class="support__wrapper _container">
         <div class="support__wrapper-body">
             <div class="support__expertise">
                 <div class="support__expertise-title">
@@ -280,10 +294,9 @@
             <img src="img/support/laptop.svg" alt="">
         </div>
     </div>
-
     <div class="plans">
-        <div class="plans__body">
-            <div class="plans__title">
+        <div class="plans__body _container">
+            <div class="plans__title" id="plans">
                 <span>
                     Тарифы
                 </span>
@@ -445,7 +458,7 @@
             <img src="img/plans/back-d.svg" alt="">
         </div>
     </div>
-    <div class="cases">
+    <div class="cases _container" id="cases">
         <div class="cases__title">
             <span>Последние кейсы</span>
         </div>
@@ -502,13 +515,13 @@
         </div>
         <button class="cases__more">ПОКАЗАТЬ ЕЩЁ</button>
     </div>
-    <div class="team">
+    <div class="team _container">
         <div class="team__title">
             <span>
                 Команда
             </span>
         </div>
-        <div class="team__list">
+        <div class="team__list _min-container">
             <div class="team__list-item">
                 <div class="team__photo">
                     <img src="img/team/Sergej-Sinica.jpg" alt="сотрудник">
@@ -567,10 +580,8 @@
                 </div>
             </div>
         </div>
-        <button class="team__btn">ВСЯ КОМАНДА</button>
-
     </div>
-    <div class="reviews">
+    <div class="reviews" id="reviews">
         <div class="reviews__title">
             <span>
                 Отзывы
@@ -815,7 +826,7 @@
             </div>
         </div>
     </div>
-    <div class="webform">
+    <div class="webform _container" id="webform">
         <div class="ds">
             <div class="ds__1">
                 <img src="img/webform/back-small-D.svg" alt="">
@@ -842,7 +853,7 @@
                 </div>
             </div>
             <div class="webform__form">
-                <form action="">
+                <form action="" method="POST">
                     <div>
                         <input class="webform__form-elem" id="name" type="text" name="name" required
                             placeholder="Ваше имя">
@@ -863,16 +874,13 @@
                         <label class="checkbox__label" for="userAgreement">Отправляя заявку я даю согласие на
                             <a>обработку своих персональных данных</a>.<span>*</span></label>
                     </div>
-                    <!-- <form action="#" method="POST">
-                        <div class="g-recaptcha" data-sitekey="6LfvTFQdAAAAAMi9xDDFtM63vjBlBemc9O00S52m"></div>
-                    </form> -->
                     <div>
                         <input class="webform__form-btn" type="button" value="ОСТАВИТЬ ЗАЯВКУ!">
                     </div>
                 </form>
             </div>
         </div>
-        <footer>
+        <footer _container>
             <div class="footer__text">
                 <p>Проект ООО «Инитлаб», Краснодар, Россия.</p>
                 <p>Drupal является зарегистрированной торговой маркой Dries Buytaert.</p>
