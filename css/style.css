@@ -745,7 +745,6 @@ li {
 }
 
 .plans .business-scale .plans__btn {
-
   width: 300px;
   margin-top: 50px;
   background-color: white;
@@ -919,7 +918,6 @@ li {
 .cases__items img {
   position: absolute;
   border-radius: 5px;
-  z-index: 1;
 }
 
 .cases__items span {
@@ -936,7 +934,7 @@ li {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 4;
+  z-index: 1;
 }
 
 .cases__text .date {
@@ -1509,7 +1507,7 @@ footer .footer__text {
 
 /* //////////////////////////// */
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 575px) {
 
   html,
   body {
@@ -1574,7 +1572,7 @@ footer .footer__text {
     background-color: #333;
     bottom: 0;
     left: 0;
-    z-index: 10;
+    z-index: 15;
     height: 48px;
     justify-content: space-between;
     padding: 0px 10px;
@@ -1693,7 +1691,7 @@ footer .footer__text {
 
   .header__content-text {
     margin: 20px auto 40px;
-    width: 380px;
+    width: 375px;
     line-height: 20px;
     font-size: 14px;
     opacity: 0.7;
@@ -1747,8 +1745,8 @@ footer .footer__text {
   }
 
   .webform__main .webform__info {
-    width: 440px;
-    margin: 60px 0;
+    width: 100%;
+    margin: 60px;
   }
 
   .webform__mail,
@@ -1757,7 +1755,7 @@ footer .footer__text {
   }
 
   .webform__info-descr {
-    width: 400px;
+    width: 100%;
     text-align: center;
   }
 
@@ -1775,8 +1773,9 @@ footer .footer__text {
 
   .webform__main .webform__form {
     margin-top: 40px;
-    width: 400px;
+    width: 100%;
     margin: 0;
+    padding: 0 10px;
   }
 
   .webform__form-elem {
@@ -1784,7 +1783,7 @@ footer .footer__text {
   }
 
   .webform__form-btn {
-    width: 400px;
+    width: 100%;
   }
 
   .webform__form-btn:hover {
@@ -1812,6 +1811,7 @@ footer .footer__text {
 
   .webform footer .footer__text {
     margin: 0;
+    margin-bottom: 10px;
   }
 
   .services {
@@ -1843,11 +1843,12 @@ footer .footer__text {
   }
 
   .services__item {
-    width: 165px;
+    width: 100%;
     margin-right: 0px;
   }
 
   .services__item p {
+    width: 135px;
     font-size: 13px;
     margin-top: 25px;
   }
@@ -1864,7 +1865,7 @@ footer .footer__text {
     content: "";
     height: 71px;
     width: 114px;
-    background: url(../img/svg/icon-bg.svg) no-repeat;
+    background: url(../img/services/icon-bg.svg) no-repeat;
     position: absolute;
   }
 
@@ -1874,11 +1875,10 @@ footer .footer__text {
   }
 
   .support__expertise-title {
-    margin-top: -150px;
     font-size: 25px;
-    width: 380px;
-    align-items: center;
-    justify-content: center;
+    width: 300px;
+    margin-top: -100px;
+    line-height: 30px;
   }
 
   .support__expertise-list {
@@ -1896,7 +1896,7 @@ footer .footer__text {
 
   .support__list {
     margin: 0;
-    width: 400px;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr
   }
@@ -1930,9 +1930,26 @@ footer .footer__text {
     font-size: 40px;
   }
 
+  /* 
+
+  .d-big-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  */
+
   .plans .scaled {
     transform: scale(1);
     box-shadow: none;
+  }
+
+  .plans .business-scale .plans__btn {
+    width: 300px;
+    height: 60px;
+    margin-top: 0;
+    background-color: white;
+    color: #F14D34;
   }
 
   .plans .scaled .plans__btn {
@@ -1968,8 +1985,9 @@ footer .footer__text {
   }
 
   .plans__footer-text {
-    width: 400px;
-    margin: 20px 20px;
+    text-align: center;
+    width: 100%;
+    margin: 20px auto;
   }
 
   .plans__card-starting {
@@ -1980,29 +1998,9 @@ footer .footer__text {
     z-index: 1;
   }
 
-  /* .plans__card-business {
-    box-shadow: 0px 4px 60px rgba(162, 162, 162, 0.25);
-    z-index: 2;
-    width: 390px;
-    height: 665px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    background: white;
-    transition: 0.4s;
+  .plans__card-business .plans__wrapper .plans__btn {
+    width: 315px;
   }
-
-  .plans__card-vip {
-    position: relative;
-    right: 20px;
-    z-index: 1;
-    width: 360px;
-    height: 619px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    margin-left: 15px;
-    background: white;
-    transition: 0.4s;
-  } */
 
   .plans__card-vip {
     right: 0px;
@@ -2012,14 +2010,20 @@ footer .footer__text {
     width: 100%;
   }
 
+  .plans__card-business .plans__wrapper {
+    width: 300px;
+    margin: 0px auto;
+    margin-left: 0;
+  }
+
   .plans__card p {
     font-size: 14px;
   }
 
-  .plans__card .plans__btn {
+  .plans__btn {
     margin: 0px auto;
-    background-color: #F14D34;
-    color: white;
+    background-color: inherit;
+    color: #f14d34;
     width: 100%;
   }
 
@@ -2033,9 +2037,9 @@ footer .footer__text {
   }
 
   .cases__items {
-    width: 440px;
-    margin: 40px auto;
-    margin-top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2043,47 +2047,44 @@ footer .footer__text {
   }
 
   .cases__width-380 {
-    width: 380px;
+    width: 100%;
     height: 440px;
-    margin-bottom: 60px;
+    margin-bottom: 0px;
   }
 
   .cases__width-380 img {
     width: 100%;
   }
 
-  .cases__width-380 .cases__text {
-    padding-bottom: 20px;
-  }
-
-  /* .cases__width-380 {
-    position: relative;
-    width: 380px;
-    height: 475px;
-    margin-bottom: 20px;
+  .cases__text {
+    width: 100%;
+    margin: 0 auto;
   }
 
   .cases__width-380 .cases__text {
-    padding: 40px 50px;
+    margin: 20px;
+    padding: 0;
+  }
+
+  .cases__small-case .cases__text {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
   }
 
   .cases__width-780 {
-    position: relative;
-    width: 780px;
-    height: 475px;
-    margin-bottom: 20px;
-    margin-right: 20px;
-  } */
-
-  .cases__width-780 {
-    width: 380px;
+    width: 100%;
     height: 440px;
     margin-bottom: 0px;
     margin-right: 0px;
   }
 
   .cases__width-780 span {
-    color: #000;
+    position: absolute;
+    top: -100px;
+    right: 0;
+    padding: 0;
+    color: #fff;
   }
 
   .cases__width-780 img {

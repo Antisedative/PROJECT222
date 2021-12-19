@@ -22,11 +22,11 @@ $(document).ready(function () {
 
     // ОТЗЫВЫ
 
-    $('.reviews__slider').on(`init reInit`, function (event, slick) {
-        $('.slick-slide-num-current').text('0' + 1 + ' '); // ' / ' + '0' + slick.slideCount
+    $('.reviews__slider').on(`init reInit`, function () {
+        $('.slick-slide-num-current').text('0' + 1 + ' ');
     })
-    $('.reviews__slider').on(`afterChange`, function (event, slick, currentSlide, nextSlide) {
-        $('.slick-slide-num-current').text('0' + (currentSlide + 1) + ' '); // + ' / 0' + slick.slideCount
+    $('.reviews__slider').on(`afterChange`, function (currentSlide) {
+        $('.slick-slide-num-current').text('0' + (currentSlide + 1) + ' ');
     })
     $('.reviews__slider').slick({
         arrows: true,
