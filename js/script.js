@@ -89,4 +89,87 @@ $(document).ready(function () {
     $('.header__burger').click(function (event) {
         $('.header__menu').toggleClass('show');
     });
+
+    $('.plans__btn').click(function (event) {
+        $('.plans__btn').toggleClass('active-modal');
+    });
 });
+
+    // React
+    //webform-react 
+// const Form = () => {
+  
+//   return React.createElement("form", {
+//     className: "ajaxForm",
+//     action: "#",
+//     acceptCharset: "UTF-8"
+//   }, React.createElement("div", {
+//     style: {
+//       color: 'red',
+//       fontSize: '14px',
+//       marginBottom: '5px'
+//     }
+//   }), React.createElement("input", {
+//     value: name,
+//     className: "webform__form-elem",
+//     id: "name",
+//     type: "text",
+//     name: "name",
+//     required: true,
+//     placeholder: "Ваше имя"
+//   }), React.createElement("div", {
+//     style: {
+//       color: 'red',
+//       fontSize: '14px',
+//       marginBottom: '5px'
+//     }
+//   }), React.createElement("input", {
+//     value: phone,
+//     className: "webform__form-elem",
+//     id: "phone",
+//     type: "tel",
+//     "data-tel-input": true,
+//     name: "phone",
+//     required: true,
+//     placeholder: "Телефон"
+//   }));
+// };
+
+// const Modal = ({
+//   children
+// }) => {
+//   const hideModal = () => {
+//     let modal = document.querySelector(".modal");
+//     modal.style.transform = "scale(" + 0 + ")";
+//   };
+
+//   return React.createElement("div", {
+//     className: "modal",
+//     onClick: () => hideModal()
+//   }, React.createElement("div", {
+//     className: "webform__form",
+//     onClick: e => e.stopPropagation()
+//   }, children));
+// };
+
+// const App = () => {
+//   const showModal = () => {
+//     let start = Date.now();
+//     let modal = document.querySelector(".modal");
+//     let timer = requestAnimationFrame(function animateModal(timestamp) {
+//       let interval = Date.now() - start;
+//       modal.style.transform = "scale(" + (interval / 300 - 0.1) + ")";
+//       if (interval < 300) requestAnimationFrame(animateModal);
+//     });
+//     };
+//     const btn = document.querySelectorAll(".plans__btn");
+//     btn.addEventListener("click", (e) => {
+//         showModal();
+//     })
+// };
+
+// ReactDOM.render(React.createElement(Form), document.querySelector("#modal"));
+
+// ReactDOM.render(React.createElement(App, null));
+// document.addEventListener("DOMContentLoaded", function () {
+// });
